@@ -1,10 +1,10 @@
-#Paradigmas de Programação
+# Paradigmas de Programação
 
 A programação imperativa, como em Java, descreve como o programa deve funcionar, com instruções explícitas como loops e condições. Já a declarativa, como em Prolog, define o que o programa deve alcançar, deixando o sistema deduzir os passos. Isso reflete uma diferença fundamental: a imperativa segue o modelo "faça isso, depois aquilo", enquanto a declarativa é "quero isso, descubra como".
 
-##Comparação de Códigos
+## Comparação de Códigos
 
-###Exemplo em Java (Paradigma Imperativo)
+### Exemplo em Java (Paradigma Imperativo)
 
 Em Java, para encontrar um avô, podemos iterar por uma lista de filhos e netos:
 
@@ -44,7 +44,7 @@ Explicação:
 
 O programa verifica manualmente cada relação: percorre a lista de filhos e verifica se algum deles tem o "outro" como filho, determinando assim se a pessoa é avó.
 
-###Exemplo em Prolog (Paradigma Declarativo)
+### Exemplo em Prolog (Paradigma Declarativo)
 
 Em Prolog, o mesmo objetivo é atingido definindo fatos e regras:
 
@@ -65,7 +65,7 @@ Explicação:
 
 O Prolog infere logicamente se Jack é avô de Simon, sem a necessidade de loops explícitos ou manipulação de listas. Ele apenas consulta as relações definidas.
 
-##Comparação Detalhada
+## Comparação Detalhada
 
 | Aspecto | Java (Imperativa) | Prolog (Declarativa) |
 |---|---|---|
@@ -75,7 +75,7 @@ O Prolog infere logicamente se Jack é avô de Simon, sem a necessidade de loops
 | Exemplo de Uso | Itera por filhos para verificar netos | Define regra grandparent_of e consulta |
 | Adequação | Bom para sistemas interativos e mutáveis | Ideal para bancos de conhecimento e consultas |
 
-##Implicações e Considerações
+## Implicações e Considerações
 
 A escolha entre paradigmas depende do contexto. Java é preferível em sistemas onde o estado muda frequentemente, como aplicativos interativos. Prolog é ideal para problemas de lógica, como bancos de conhecimento.
 
