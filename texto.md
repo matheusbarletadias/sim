@@ -8,7 +8,7 @@ A programação imperativa, como em Java, descreve como o programa deve funciona
 
 Em Java, para encontrar um avô, podemos iterar por uma lista de filhos e netos:
 
-ˋˋˋ
+~~~
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +38,7 @@ public class Person {
         return false;
     }
 }
-ˋˋˋ
+~~~
 
 Explicação:
 
@@ -48,18 +48,18 @@ O programa verifica manualmente cada relação: percorre a lista de filhos e ver
 
 Em Prolog, o mesmo objetivo é atingido definindo fatos e regras:
 
-ˋˋˋ
+~~~
 male(jack). male(oliver). female(helen).
 parent_of(jack, jess). parent_of(helen, jess). parent_of(jess, simon).
 
 grandparent_of(X, Y) :- parent_of(X, Z), parent_of(Z, Y).
-ˋˋˋ
+~~~
 
 Para consultar se Jack é avô de Simon, basta executar:
 
-ˋˋˋ
+~~~
 ?- grandparent_of(jack, simon).
-ˋˋˋ
+~~~
 
 Explicação:
 
