@@ -48,7 +48,7 @@ O programa verifica manualmente cada relação: percorre a lista de filhos e ver
 
 Em Prolog, o mesmo objetivo é atingido definindo fatos e regras:
 
-~~~
+~~~Prolog
 male(jack). male(oliver). female(helen).
 parent_of(jack, jess). parent_of(helen, jess). parent_of(jess, simon).
 
@@ -57,7 +57,7 @@ grandparent_of(X, Y) :- parent_of(X, Z), parent_of(Z, Y).
 
 Para consultar se Jack é avô de Simon, basta executar:
 
-~~~
+~~~Prolog
 ?- grandparent_of(jack, simon).
 ~~~
 
